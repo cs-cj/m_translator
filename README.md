@@ -2,7 +2,7 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/m_translator`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+TODO: Delete this and the text above, and describe your gem!
 
 ## Installation
 
@@ -22,7 +22,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+  ``` ruby
+    g =MTranslator::Google.new("en","zh-CN","Hello, Who are you")
+    g.translator
+    y =MTranslator::Youdao.new("zh-CHS","en","你是谁")
+    y.translator
+  ```
 
 ## Development
 
@@ -33,3 +38,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/m_translator.
+
+## Special thanks
+
+https://github.com/hujingshuang/MTrans
+

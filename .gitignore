@@ -9,3 +9,7 @@
 
 # rspec failure tracking
 .rspec_status
+.DS_Store
+.idea
+lib/.DS_Store
+m_translator-0.1.0.gem
