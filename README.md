@@ -23,10 +23,14 @@ Or install it yourself as:
 ## Usage
 
   ``` ruby
-    g =MTranslator::Google.new("en","zh-CN","Hello, Who are you")
+    g = MTranslator::Google.new("en","zh-CN","Hello, Who are you")
     g.translator
-    y =MTranslator::Youdao.new("zh-CHS","en","你是谁")
+    y = MTranslator::Youdao.new("zh-CHS","en","你是谁")
     y.translator
+    b = MTranslator::Baidu.new('zh','en','你好,我的世界')
+    b.translator
+    s = MTranslator::Sogou.new("zh-CHS","en","你好")
+    s.translator
   ```
 
 ## Development
