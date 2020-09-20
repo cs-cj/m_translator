@@ -7,7 +7,7 @@ module MTranslator
       @to = to
       @text = text
       @u = "fanyideskweb"
-      @c = "ebSeFb%=XZ%T[KZ)c(sy!"
+      @c = "n%A-rKaT5fb[Gy?;N5@Tj"
       @f = "#{ctime}"+"#{rand(10 + 1)}"
     end
 
@@ -27,17 +27,19 @@ module MTranslator
       params["client"] = "fanyideskweb"
       params["salt"] = @f
       params["sign"] = sign
+      params["ts"] = ctime
+      params["bv"] = '53539dde41bde18f4a71bb075fcf2e66'
       params["doctype"] = "json"
       params["version"] = "2.1"
       params["keyfrom"] = "fanyi.web"
       params["action"] = "FY_BY_CLICKBUTTION"
-      params["typoResult"] = "false"
       params
     end
 
     def req_headers
       headers = {}
-      headers["Cookie"] = "OUTFOX_SEARCH_USER_ID_NCOO=1537643834.9570553; OUTFOX_SEARCH_USER_ID=1799185238@10.169.0.83; fanyi-ad-id=43155; fanyi-ad-closed=1; JSESSIONID=aaaBwRanNsqoobhgvaHmw; _ntes_nnid=07e771bc10603d984c2dc8045a293d30,1525267244050; ___rl__test__cookies=#{ctime}"
+      #headers["Cookie"] = "OUTFOX_SEARCH_USER_ID_NCOO=1537643834.9570553; OUTFOX_SEARCH_USER_ID=1799185238@10.169.0.83; fanyi-ad-id=43155; fanyi-ad-closed=1; JSESSIONID=aaaBwRanNsqoobhgvaHmw; _ntes_nnid=07e771bc10603d984c2dc8045a293d30,1525267244050; ___rl__test__cookies=#{ctime}"
+      headers["Cookie"] = "OUTFOX_SEARCH_USER_ID=-352392290@116.136.20.84; P_INFO=a121bc; OUTFOX_SEARCH_USER_ID_NCOO=710017829.1902944; JSESSIONID=aaaDa3sqezCDY-snjj91w; SESSION_FROM_COOKIE=unknown; ___rl__test__cookies=#{ctime}"
       headers["Referer"] = "http://fanyi.youdao.com/"
       headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
       headers

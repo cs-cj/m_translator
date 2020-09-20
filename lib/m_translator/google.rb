@@ -4,7 +4,7 @@ module MTranslator
       @url = "https://translate.google.cn/translate_a/single"
       @from = from
       @to = to
-      @text = text
+      @text = CGI::unescape(text)
     end
 
     def translator
